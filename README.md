@@ -35,3 +35,10 @@ git add 'nome-do-arquivo' - adiciona um arquivo do repositorio na area de prepar
 
 git status - visualiza os arquivos que estão com algumas alterações para serem salvas (commit)
 
+echo 'pasta-ou-arquivo/' > .gitignore - coloca o diretório do repositório na lista de diretórios que serão ignorados na hora de dar o commit
+
+echo > .gitignore - volta a mostrar o diretório do repositório na lista de diretórios na hora de dar o commit
+
+touch 'pasta/.gitkeep' -comando utilizado para adicionar arquivo em diretório vazio, para que ele mesmo vazio apareca na lista de preparacao do git
+
+git add '.' - adicionando o ponto no comando git add, todos os arquivos e diretórios ficarao na lista de prontos para commit
