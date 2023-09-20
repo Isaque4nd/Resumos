@@ -1,5 +1,4 @@
 
-
 # DIO | Curso de Git e GitHub
 
 Bootcamp:
@@ -66,6 +65,3 @@ git restore --staged 'nome-da-pasta-ou-arquivo' - remove a pasta ou arquivo da a
 
 git reflog - mostra todas as alteracoes feitas ate mesmo as que nao aparecem no git log
 
-=======
-# Resumos
->>>>>>> fab3e42b07e17c4a1dcce4f72ec22b7db058880e
