@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 # DIO | Curso de Git e GitHub
 
