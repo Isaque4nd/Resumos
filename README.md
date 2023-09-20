@@ -65,3 +65,33 @@ git restore --staged 'nome-da-pasta-ou-arquivo' - remove a pasta ou arquivo da a
 
 git reflog - mostra todas as alteracoes feitas ate mesmo as que nao aparecem no git log
 
+git checkout -b 'nome-nova-branch' - cria uma nova branch e troca ja para nova branch
+
+git checkout 'nome-branch' - muda para a branch desejada
+
+git branch -v - mostra o ultimo commit de cada branch criada
+
+git merge 'nome-branch' - estando dentro da branch main podemos mesclar as alteracoes feitas na branch selecionada ('nome-branch') com o que temos salvo na main (em caso de estarmos em outra branch serao mesclado as alteracoes da branch selecionada com o que temos nessa branch)
+
+git branch - lista as branchs que temos no repositorio, a branch em que estamos fica destacada com um * na frente e em uma coloracao diferente
+
+git branch -d 'nome-branch-excluir' - deleta a branch selecionada
+
+git fetch - baixa as alteracoes do repositorio remoto para o local sem mesclar 
+
+git diff - 'branch-1' 'branch-2' - mostra as diferecas presentes nas duas branchs selecionadas
+
+git merge - mescla as alteracoes do repositorio remoto com as alteracoes do repositorio local
+
+git clone 'URL-repositorio-remoto' --branch 'nome-branch' --single-branch - clona apenas a branch indicada ('nome-branch') do repositorio remoto para o local
+
+git stash - arquiva a modificacao feita na branch em uso
+
+git stash list - mostra as modificacoes arquivadas na branch atual
+
+git stash pop - traz de volta a alteracao mais recente que foi arquivada e remove da lista de arquivadas
+
+git stash apply - traz de volta a alteracao mais recente que foi arquivada, mas mantem ela na lista de arquivadas
+
+
+
