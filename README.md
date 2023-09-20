@@ -23,9 +23,11 @@ git commit -m"mensagem-que-desejar" - adiciona um commit e uma mensagem ao mesmo
 
 git commit --amend -m"nova-mensagem" - troca a mensagem adicionada no último commit
 
-git pull - puxa as alterações presentes no repositorio remoto
+git pull - puxa as alterações presentes no repositorio remoto e mescla com as alteracoes presentes no repositorio local
 
 git push - sobe as alterações do repositório local para o remoto
+
+git push -u origin main - sobe as alterações do repositório local para o remoto e faz com que a branch main se torne upstring
 
 cat 'nome-do-arquivo' visualiza as informações contidas no arquivo selecionado
 
@@ -52,3 +54,14 @@ git log - visualiza os commits feitos, com data, autor, codigo hash e descriçã
 rm -rf 'nome-da-pasta-ou-arquivo - remove algum diretório que não desejávamos ter criado
 
 git restore 'nome-da-pasta-ou-arquivo' - restaura a pasta ou arquivo para uma versão anterior à última alteração (para casos de alteções por engano ou fazer alterações que deixem algo pior e quisermos reverter)
+
+git reset --soft 'codigo-hash-do-commit-selecionado' - apaga os commits feitos depois do commit selecionado
+
+git reset --mixed 'codigo-hash-do-commit-selecionado' - volta os arquivos que foram modificados depois do commit selecionado para a lista de arquivos nao preparados para commit (seria necessario usar o git add . para eles novamente)
+
+git reset --hard 'codigo-hash-do-commit-selecionado' - apaga totalmente os arquivos contidos nos commits feitos depois do selecionado (ficam somente pastas e arquivos salvos até aquele commit)
+
+git restore --staged 'nome-da-pasta-ou-arquivo' - remove a pasta ou arquivo da area de preparacao para commit
+
+git reflog - mostra todas as alteracoes feitas ate mesmo as que nao aparecem no git log
+
